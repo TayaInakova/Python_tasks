@@ -6,11 +6,11 @@
 # максимальное и минимальное значение. (не пользуемся списками и встроенными функциями)
 # Количество чисел задаётся в начале работы программы
 #
-# count = int(input('Здайте количество чисел: '))
+# count = int(input('Задайте количество чисел: '))
 # aggregate = 0
 # most_of_all = None
 # least_of_all = None
-# if count != 0:
+# if count >= 0:
 #     for i in range(count):
 #         i = float(input('Введите дробное число: '))
 #         aggregate += i
@@ -43,7 +43,7 @@
 #
 # correct = 0
 # for i in range(1, 11):
-#     num = int(input(f'Решите пример(введите число): {i} * 4 = '))
+#     num = int(input(f'Решите пример(введите число): {i} * 2 = '))
 #     if num == i * 4:
 #         correct += 1
 #     else:
