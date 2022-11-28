@@ -61,11 +61,11 @@
 # Ставим таймер - часы, минуты, секунды.
 # После отсчета срабатывает будильник
 
-
+# import time
 # hour = int(input('Укажите количество часов: '))
 # minute = int(input('Укажите количество минут: '))
 # second = int(input('Укажите количество секунд: '))
-# timer = second + (minute * 60) + (hour * 3600)
+# time_count = second + (minute * 60) + (hour * 3600)
 #
 #
 # def dec(n, end: list[str]):
@@ -75,15 +75,13 @@
 #         return end[1]
 #     else:
 #         return end[2]
-
+#
 #
 # end_h = ['час', 'часа', 'часов']
 # end_m = ['минута', 'минуты', 'минут']
 # end_s = ['секунда', 'секунды', 'секунд']
 #
-# for i in range(timer, 0, -1):
-#     print(
-#         f'Осталось {hour} {dec(hour, end_h)}, {minute} {dec(minute, end_m)}, {second} {dec(second, end_s)}')
+# for i in range(time_count, 0, -1):
 #     if hour == 0 and minute == 0:
 #         second -= 1
 #     elif hour == 0:
@@ -99,9 +97,12 @@
 #             minute -= 1
 #             second = 60
 #         second -= 1
+#     time.sleep(1)
+#     print(
+#         f'Осталось {hour} {dec(hour, end_h)}, {minute} {dec(minute, end_m)}, {second} {dec(second, end_s)}')
 #
 # print('БЗЗЗЗЗЗЗЗ!')
-#
+
 # 5) Решить следующую задачу, которая вычисляет наибольший общий делитель двух целых чисел
 #
 # Большее число поделить на меньшее.
@@ -120,7 +121,7 @@
 #     if num02 != 0:
 #         num_num = num02
 #         num01 = num01 % num020
-
+#
 #     else:
 #         break
 #     if num01 != 0:
