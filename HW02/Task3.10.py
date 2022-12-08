@@ -18,7 +18,29 @@ def transfer(number, radix):
         print("Идея отрицательных систем счисления распространения не нашла. Не только широкого, но и почти никакого.")
 
 
-num = int(input('Введите число в десятичной системе: '))
-num1 = int(input('Введите основание системы счисления: '))
+# num = int(input('Введите число в десятичной системе: '))
+# num1 = int(input('Введите основание системы счисления: '))
+# transfer(num, num1)
 
-transfer(num, num1)
+
+def right_16_convert(text):
+    f = ''
+    right_16 = 'ABCDEF'
+    if text > 0:
+        while text > 0:
+            temporary = text % 16
+            if temporary > 9:
+                a = temporary % 10
+                temporary = right_16[a]
+            text = text // 16
+            f += str(temporary)
+        text = f[::-1]
+        print(f"Шестнадцатиричное представление заданного числа: {text}")
+    elif text == 0:
+        print("Перевод нуля в любую систему счисления даст ноль.")
+    else:
+        print("Сложное...")
+
+
+user_input = int(input('Введите число: '))
+right_16_convert(user_input)
