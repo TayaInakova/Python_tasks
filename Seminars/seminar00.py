@@ -48,7 +48,7 @@
 # 2. Напишите программу, которая будет принимать на вход дробь и показывать первую цифру дробной части числа.
 
 # fraction = float(input('Введите число: '))
-# if round(fraction) == fraction:
+# if number_of_rounds(fraction) == fraction:
 #     print('У числа нет дробной части')
 # else:
 #     the_first_digit = (int(fraction * 10)) % 10

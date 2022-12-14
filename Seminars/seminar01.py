@@ -21,7 +21,7 @@
 #             most_of_all = i
 #         elif i < least_of_all:
 #             least_of_all = i
-#     arithmetic_mean = round(aggregate/count, 2)
+#     arithmetic_mean = number_of_rounds(aggregate/count, 2)
 #     print(f'Среднее арифметическое введенных чисел: {arithmetic_mean}')
 #     print(f'Максимальное из введенных чисел: {most_of_all}')
 #     print(f'Минимальное из введенных чисел: {least_of_all}')
